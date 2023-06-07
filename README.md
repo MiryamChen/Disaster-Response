@@ -23,6 +23,10 @@ The website is powered by a model that does the text classification behind. It a
 
 - README.md
 
+- work books
+|- ETL Pipeline Preparation.ipynb #Jupyter notebook file for testing codes
+|- ML Pipeline Preparation.ipynb #Jupyter notebook file for testing codes
+
 # List of libraries used
 Pandas
 sqlalchemy
