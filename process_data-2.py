@@ -28,6 +28,8 @@ def clean_data(df):
         categories[column] = categories[column].str[-1]
         # convert column from string to numeric
         categories[column] = categories[column].astype(int)
+    #replace number 2 with 1 in the related- column of categories df
+    categories = categories.replace(2, 1, inplace=False)
     # replace categories in df with new category columns
     df.drop('categories', axis=1, inplace=True)
     # concatenate the original dataframe with the new `categories` dataframe

@@ -4,6 +4,21 @@ This project builds a website that classifies incoming texts into different disa
 
 The website is powered by a model that does the text classification behind. It also includes 3 graphs to visually check messages per genre, top 10 categories with most messages, and the bottom 10 categories with least messages received. 
 
+# Instructions:
+1. Run the following commands in the project's root directory to set up your database and model.
+
+    - To run ETL pipeline that cleans data and stores in database
+        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
+    - To run ML pipeline that trains classifier and saves
+        `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
+
+2. Go to `app` directory: `cd app`
+
+3. Run your web app: `python run.py`
+
+4. Click the `PREVIEW` button to open the homepage
+
+
 # Files included: 
 - app
 | - template
